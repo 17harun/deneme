@@ -546,13 +546,11 @@
             const img = e.target;
             if (img.dataset.fallbackTried) return;
             img.dataset.fallbackTried = 'true';
-            // Amblem: RESIMLER/ altında değil, kök dizinde (hilal-logo-emblem.png)
-            if (img.src.includes('RESIMLER/hilal-logo-emblem')) {
-                // Sayfanın kök URL'sini bul, RESIMLER/ kısmını çıkar
-                const base = img.src.replace(/RESIMLER\/hilal-logo-emblem\.[^?#]+/, 'hilal-logo-emblem.png');
-                img.src = base;
-            } else if (img.src.includes('hilal-logo-emblem.webp')) {
+            // Amblem ve WebP görselleri için akıllı geri dönüş
+            if (img.src.includes('hilal-logo-emblem.webp')) {
                 img.src = img.src.replace('hilal-logo-emblem.webp', 'hilal-logo-emblem.png');
+            } else if (img.src.includes('ambient_crescent_bg.webp')) {
+                img.src = img.src.replace('ambient_crescent_bg.webp', 'ambient_crescent_bg.jpg');
             } else if (img.src.endsWith('.webp')) {
                 img.src = img.src.replace(/\.webp$/i, '.jpg');
             }
