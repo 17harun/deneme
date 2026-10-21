@@ -1,0 +1,32 @@
+# IDE ve Editör Yapılandırmaları
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# İşletim Sistemi Geçici Dosyaları
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Yedek ve Geçici Dosyalar
+*.bak
+*.bak_*
+*.tmp
+*.temp
+*.log
+
+# Bağımlılık ve Paket Klasörleri
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Yerel Ortam Değişkenleri
+.env
+.env.local
+.env.*.local

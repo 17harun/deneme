@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /hakkimizda.html
+Allow: /hizmetlerimiz.html
+Allow: /galeri.html
+Allow: /iletisim.html
+Allow: /style.css
+Allow: /RESIMLER/
+
+# Hassas dosyalar
+Disallow: /.htaccess
+Disallow: /.htpasswd
+Disallow: /tmp/
+Disallow: /logs/
+Disallow: /*.bak
+Disallow: /*.old
+Disallow: /*.tmp
+
+# Sitemap
+Sitemap: https://hilalteknik.com/sitemap.xml
+
+# Crawl-delay (sunucu yükünü azaltmak için)
+Crawl-delay: 1
+
