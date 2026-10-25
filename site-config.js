@@ -547,10 +547,10 @@
             if (img.dataset.fallbackTried) return;
             img.dataset.fallbackTried = 'true';
             // Amblem ve WebP görselleri için akıllı geri dönüş
-            if (img.src.includes('hilal-logo-emblem.webp')) {
-                img.src = img.src.replace('hilal-logo-emblem.webp', 'hilal-logo-emblem.png');
-            } else if (img.src.includes('ambient_crescent_bg.webp')) {
-                img.src = img.src.replace('ambient_crescent_bg.webp', 'ambient_crescent_bg.jpg');
+            if (img.src.includes('logo-hilal-amblem.webp')) {
+                img.src = img.src.replace('logo-hilal-amblem.webp', 'logo-hilal-amblem.png');
+            } else if (img.src.includes('arka-plan-hilal-ambient.webp')) {
+                img.src = img.src.replace('arka-plan-hilal-ambient.webp', 'arka-plan-hilal-ambient.jpg');
             } else if (img.src.endsWith('.webp')) {
                 img.src = img.src.replace(/\.webp$/i, '.jpg');
             }

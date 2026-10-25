@@ -119,10 +119,10 @@ body {
     width: 108%;
     height: 108%;
     background-color: #FAF8F5;
-    background-image: url('RESIMLER/ambient_crescent_bg.jpg');
+    background-image: url('RESIMLER/arka-plan-hilal-ambient.jpg');
     background-image: image-set(
-        url('RESIMLER/ambient_crescent_bg.webp') type('image/webp'),
-        url('RESIMLER/ambient_crescent_bg.jpg') type('image/jpeg')
+        url('RESIMLER/arka-plan-hilal-ambient.webp') type('image/webp'),
+        url('RESIMLER/arka-plan-hilal-ambient.jpg') type('image/jpeg')
     );
     background-position: center center;
     background-size: cover;
@@ -6244,10 +6244,10 @@ html[data-theme="light"] .scroll-to-top:hover {
 @media (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
     .hero-background {
-        background-image: url('RESIMLER/ambient_crescent_bg.jpg');
+        background-image: url('RESIMLER/arka-plan-hilal-ambient.jpg');
         background-image: image-set(
-            url('RESIMLER/ambient_crescent_bg.webp') type('image/webp'),
-            url('RESIMLER/ambient_crescent_bg.jpg') type('image/jpeg')
+            url('RESIMLER/arka-plan-hilal-ambient.webp') type('image/webp'),
+            url('RESIMLER/arka-plan-hilal-ambient.jpg') type('image/jpeg')
         );
         background-size: cover;
     }
