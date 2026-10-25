@@ -58,24 +58,8 @@
             }
         })();
     </script>
-    <link rel="stylesheet" href="style.css?v=20261020_ambient">
+    <link rel="stylesheet" href="style.css?v=20261025_modern_hero">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style id="hilal-nav-hero-overrides">
-        .section--kombi-hero {
-            background-color: transparent !important;
-            background: transparent !important;
-            color: #16202A !important;
-            padding: 40px 0 70px !important;
-            min-height: 75vh !important;
-            position: relative !important;
-            box-shadow: none !important;
-        }
-
-        .hero-background,
-        .hero-overlay {
-            display: none !important;
-        }
-    </style>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -137,7 +121,8 @@
                     <ul class="nav-list">
                         <li><a href="index.html" class="nav-link active" data-page="index">ANASAYFA</a></li>
                         <li><a href="hakkimizda.html" class="nav-link" data-page="hakkimizda">HAKKIMIZDA</a></li>
-                        <li><a href="hizmetlerimiz.html" class="nav-link" data-page="hizmetlerimiz">HİZMETLERİMİZ</a></li>
+                        <li><a href="hizmetlerimiz.html" class="nav-link" data-page="hizmetlerimiz">HİZMETLERİMİZ</a>
+                        </li>
                         <li><a href="galeri.html" class="nav-link" data-page="galeri">GALERİ</a></li>
                         <li><a href="iletisim.html" class="nav-link" data-page="iletisim">İLETİŞİM</a></li>
                     </ul>
@@ -161,65 +146,378 @@
 
 
 
-        <!-- ==================== HERO SECTION (DÜZ RENK ARKA PLAN) ==================== -->
-        <section class="hero-section section section--kombi-hero">
-            <div class="container">
-                <div class="hero-grid">
-                    <!-- Sol Sütun - Kombi Markaları -->
-                    <div class="hero-brands hero-brands--left">
-                        <h3 class="brands-title">Hizmet Verdiğimiz Markalar</h3>
-                        <div class="brands-grid">
-                            <div class="brand-item">Vaillant</div>
-                            <div class="brand-item">Bosch</div>
-                            <div class="brand-item">Buderus</div>
-                            <div class="brand-item">Viessmann</div>
-                            <div class="brand-item">Ariston</div>
-                            <div class="brand-item">Baxi</div>
-                            <div class="brand-item">Demirdöküm</div>
-                            <div class="brand-item">Protherm</div>
-                            <div class="brand-item">Ferroli</div>
+        <!-- ==================== YENİLENMİŞ MODERN HERO BÖLÜMÜ (MOBİL & PC UYUMLU) ==================== -->
+        <section class="section--hero-modern" id="heroSection">
+            <!-- ==================== MOBİL GÖRÜNÜM (REFERANS TASARIM 1) ==================== -->
+            <div class="hero-mobile-layout">
+                <div class="hero-container">
+                    <!-- Üst Konum / Kimlik Rozeti -->
+                    <div class="hero-pill-badge" id="heroPillBadge">
+                        <span class="pulse-indicator"></span>
+                        <span class="pill-text">Özel Yetkili Kombi Servisi • Osman Tari (25+ Yıl Deneyim)</span>
+                    </div>
 
+                    <!-- Ana Başlık Kartı -->
+                    <div class="hero-title-card">
+                        <h1 class="hero-main-title">
+                            Evinizin Sıcaklığı,<br>
+                            <span class="hl-terracotta">Ustasının Güvencesinde.</span>
+                        </h1>
+                        <p class="hero-main-desc">
+                            Vaillant, Bosch, Buderus ve daha birçok kombi markasında ezbere parça değişimi değil;
+                            <strong>25 yılı aşkın ustalık tecrübesiyle</strong> yerinde doğru teşhis, 1 yıl
+                            garantili orijinal yedek parça ve ilaçlı makineli petek temizliği sunuyoruz.
+                        </p>
+                    </div>
+
+                    <!-- 3'lü Mini Avantaj / İstatistik Kartları -->
+                    <div class="hero-stats-grid">
+                        <div class="hero-stat-card stat--saving">
+                            <div class="stat-icon-box icon-box--green">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline>
+                                    <polyline points="17 18 23 18 23 12"></polyline>
+                                </svg>
+                            </div>
+                            <span class="stat-val">%30 Tasarruf</span>
+                            <span class="stat-sub">Doğalgazda</span>
+                        </div>
+
+                        <div class="hero-stat-card stat--warranty">
+                            <div class="stat-icon-box icon-box--orange">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <span class="stat-val">1 Yıl Garanti</span>
+                            <span class="stat-sub">Resmi Yazılı</span>
+                        </div>
+
+                        <div class="hero-stat-card stat--parts">
+                            <div class="stat-icon-box icon-box--blue">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <span class="stat-val">Orijinal Parça</span>
+                            <span class="stat-sub">Sıfır Komponent</span>
                         </div>
                     </div>
 
-                    <!-- Orta Sütun - Ana İçerik -->
-                    <div class="hero-content">
-                        <h1 class="hero-title">Evinizin Sıcaklığı <span class="highlight">Bizden</span></h1>
-                        <div class="hero-badge">
-                            <span class="badge-text">Özel Yetkili Kombi Servisi</span>
-                        </div>
-                        <p class="hero-subtitle">Doğalgaz faturasında %30'a kadar tasarruf için doğru bakım ve
-                            profesyonel hizmet.</p>
-
-                        <div class="hero-cta">
-                            <a href="javascript:void(0)" class="btn btn--primary js-open-quote" id="heroQuoteBtn"
-                                role="button" aria-haspopup="dialog" aria-expanded="false"
-                                data-open-drawer="quote">Hemen Randevu Alın</a>
-                        </div>
-
-                        <div class="trust-badge">
-                            <div class="trust-item">
+                    <!-- Usta ve Güven Kartı (4.9 / 5.0 ve 25+ Yıl Baş Usta) -->
+                    <div class="hero-expert-trust-card">
+                        <div class="expert-top-bar">
+                            <div class="expert-stars" aria-label="5 üzerinden 4.9 puan">
                                 <i class="fas fa-star"></i>
-                                <span>Malatya'da 4.9/5 müşteri memnuniyeti</span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="expert-rating-pill">4.9 / 5.0</div>
+                        </div>
+                        <div class="expert-master-info">
+                            <div class="expert-medal-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="expert-details">
+                                <span class="expert-name-title">25+ Yıl Baş Usta</span>
+                                <span class="expert-cert">Osman Tari • MYK Seviye 4</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Sağ Sütun - Kombi Markaları -->
-                    <div class="hero-brands hero-brands--right">
-                        <h3 class="brands-title">Hizmet Verdiğimiz Markalar</h3>
-                        <div class="brands-grid">
-                            <div class="brand-item">Baymak</div>
-                            <div class="brand-item">E.C.A.</div>
-                            <div class="brand-item">Immergas</div>
+                    <!-- İki Görselli Vitrin (Petek Temizlik + Kombi Bakım Onarım) -->
+                    <div class="hero-overlapping-gallery">
+                        <!-- Sağ Üst Konum Rozeti: Malatya -->
+                        <div class="pc-location-badge">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Malatya</span>
+                        </div>
 
-                            <div class="brand-item">Beko</div>
+                        <!-- Arka Görsel (Petek Temizlik - Solda Net Görünen Radyatör) -->
+                        <div class="gallery-card gallery-card--back">
+                            <img src="RESIMLER/hero_petek_montaj.jpg" alt="Malatya Kalorifer Petek Temizlik ve Tesisat" width="600"
+                                height="450" loading="eager">
+                            <div class="card-label-tag tag-navy">
+                                <i class="fas fa-fire"></i>
+                                <span>Petek Temizlik</span>
+                            </div>
+                        </div>
 
-                            <div class="brand-item">Daikin</div>
-                            <div class="brand-item">Baykan</div>
-                            <div class="brand-item">Alarko</div>
-                            <div class="brand-item">Warmhaus</div>
-                            <div class="brand-item">Airfel</div>
+                        <!-- Ön Görsel (Kombi Bakım Onarım - Markasız Modern Yoğuşmalı Kombi) -->
+                        <div class="gallery-card gallery-card--front">
+                            <img src="RESIMLER/hero_modern_kombi.jpg" alt="Malatya Kombi Bakım Onarım ve Servisi"
+                                width="600" height="450" loading="eager">
+                            <div class="card-label-tag tag-blue">
+                                <i class="fas fa-tools"></i>
+                                <span>Kombi Bakım Onarım</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Randevu CTA Butonu -->
+                    <div class="hero-cta-wrapper">
+                        <a href="javascript:void(0)" class="btn hero-primary-cta js-open-quote" id="heroQuoteBtnMob"
+                            role="button" aria-haspopup="dialog" aria-expanded="false" data-open-drawer="quote">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>Online Servis Randevusu Al</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <!-- Hizmet Verdiğimiz Markalar Kartı (Genişletilebilir) -->
+                    <div class="hero-brands-showcase js-brands-card" id="mobBrandsCard" role="button" tabindex="0"
+                        aria-expanded="false" title="Tüm markaları görmek için tıklayın">
+                        <div class="brands-header">
+                            <div class="brands-header-left">
+                                <i class="fas fa-wrench"></i>
+                                <span>Hizmet Verdiğimiz Markalar</span>
+                            </div>
+                            <span class="brands-expand-badge" aria-hidden="true">
+                                <span class="expand-text">+12 Marka</span>
+                                <i class="fas fa-chevron-down expand-chevron"></i>
+                            </span>
+                        </div>
+                        <div class="brands-pills-wrap">
+                            <!-- En Bilindik Markalar (Varsayılan Görünür) -->
+                            <span class="brand-chip brand-chip--featured">Vaillant</span>
+                            <span class="brand-chip brand-chip--featured">Bosch</span>
+                            <span class="brand-chip brand-chip--featured">Buderus</span>
+                            <span class="brand-chip brand-chip--featured">Demirdöküm</span>
+                            <span class="brand-chip brand-chip--featured">Baymak</span>
+                            <span class="brand-chip brand-chip--featured">E.C.A.</span>
+                            <!-- Tıklanınca Genişleyip Görünen Diğer Markalar -->
+                            <span class="brand-chip brand-chip--extra">Viessmann</span>
+                            <span class="brand-chip brand-chip--extra">Ariston</span>
+                            <span class="brand-chip brand-chip--extra">Daikin</span>
+                            <span class="brand-chip brand-chip--extra">Protherm</span>
+                            <span class="brand-chip brand-chip--extra">Warmhaus</span>
+                            <span class="brand-chip brand-chip--extra">Alarko</span>
+                            <span class="brand-chip brand-chip--extra">Baxi</span>
+                            <span class="brand-chip brand-chip--extra">Ferroli</span>
+                            <span class="brand-chip brand-chip--extra">Immergas</span>
+                            <span class="brand-chip brand-chip--extra">Beko</span>
+                            <span class="brand-chip brand-chip--extra">Baykan</span>
+                            <span class="brand-chip brand-chip--extra">Airfel</span>
+                        </div>
+                        <div class="brands-card-hint">
+                            <small><i class="fas fa-shield-alt"></i> Tüm modellerde 1 yıl garantili orijinal
+                                parça</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== PC / DESKTOP GÖRÜNÜMÜ (İKİ GÖRSELLİ REFERANS 2) ==================== -->
+            <div class="hero-desktop-layout">
+                <div class="hero-desktop-container">
+                    <div class="hero-pc-grid">
+                        <!-- Sol Kolon: Başlık, Açıklama, Butonlar ve Sorun Seçim Kartı -->
+                        <div class="hero-pc-left">
+                            <!-- Üst Konum Rozeti -->
+                            <div class="hero-pc-pill">
+                                <span class="pulse-indicator"></span>
+                                <span>Özel Yetkili Kombi Servisi • Osman Tari (25+ Yıl Deneyim)</span>
+                            </div>
+
+                            <!-- Ana Başlık -->
+                            <h1 class="hero-pc-title">
+                                Evinizin Sıcaklığı,<br>
+                                <span class="hl-terracotta">Ustasının Güvencesinde.</span>
+                            </h1>
+
+                            <!-- Alt Açıklama -->
+                            <p class="hero-pc-desc">
+                                Vaillant, Bosch, Buderus ve daha birçok kombi markasında ezbere parça değişimi değil;
+                                <strong>25 yılı aşkın ustalık tecrübesiyle</strong> yerinde doğru teşhis, 1 yıl
+                                garantili orijinal yedek parça ve ilaçlı makineli petek temizliği sunuyoruz.
+                            </p>
+
+                            <!-- Buton Grubu -->
+                            <div class="hero-pc-btn-group">
+                                <a href="javascript:void(0)" class="btn hero-primary-cta js-open-quote"
+                                    id="heroQuoteBtnPC" role="button" aria-haspopup="dialog" aria-expanded="false"
+                                    data-open-drawer="quote">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>Online Servis Randevusu Al</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                                <a href="hizmetlerimiz.html" class="btn hero-pc-secondary-btn">
+                                    <span>Hizmetlerimizi İncele</span>
+                                </a>
+                            </div>
+
+                            <!-- Kombinizde Hangi Sorun Var? Kartı -->
+                            <div class="hero-pc-trouble-card">
+                                <div class="trouble-header">
+                                    <i class="fas fa-bolt text-warning"></i>
+                                    <span>Kombinizde Hangi Sorun Var?</span>
+                                </div>
+                                <div class="trouble-chips-wrap">
+                                    <button type="button" class="trouble-chip js-trouble-click js-open-quote"
+                                        data-issue="Sıcak Su Gelmiyor">
+                                        <i class="fas fa-tint text-primary"></i> Sıcak Su Gelmiyor
+                                    </button>
+                                    <button type="button" class="trouble-chip js-trouble-click js-open-quote"
+                                        data-issue="Petekler Isınmıyor">
+                                        <i class="fas fa-fire text-danger"></i> Petekler Isınmıyor
+                                    </button>
+                                    <button type="button" class="trouble-chip js-trouble-click js-open-quote"
+                                        data-issue="Su Basıncı Düşüyor">
+                                        <i class="fas fa-info-circle text-info"></i> Su Basıncı Düşüyor
+                                    </button>
+                                    <button type="button" class="trouble-chip js-trouble-click js-open-quote"
+                                        data-issue="Arıza Kodu Yanıyor">
+                                        <i class="fas fa-exclamation-triangle text-warning"></i> Arıza Kodu Yanıyor
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sağ Kolon: İki Görselli Usta ve Güven Kartı -->
+                        <div class="hero-pc-right">
+                            <div class="hero-pc-card">
+                                <!-- İki Görsel Vitrini (Petek Temizlik + Kombi Bakım Onarım) -->
+                                <div class="pc-visuals-duo">
+                                    <!-- Sağ Üst Konum Rozeti: Malatya -->
+                                    <div class="pc-location-badge">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span>Malatya</span>
+                                    </div>
+
+                                    <!-- 1. Görsel (Petek Temizlik - Solda Net Görünen Radyatör) -->
+                                    <div class="pc-img-box pc-img-box--main">
+                                        <img src="RESIMLER/hero_petek_montaj.jpg"
+                                            alt="Malatya Kalorifer Petek Temizlik ve Tesisat" width="580" height="380"
+                                            loading="eager" fetchpriority="high" decoding="async">
+                                        <div class="pc-img-tag tag-navy">
+                                            <i class="fas fa-fire"></i>
+                                            <span>Petek Temizlik</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- 2. Görsel (Kombi Bakım Onarım - Markasız Modern Yoğuşmalı Kombi) -->
+                                    <div class="pc-img-box pc-img-box--overlap">
+                                        <img src="RESIMLER/hero_modern_kombi.jpg"
+                                            alt="Malatya Kombi Bakım Onarım ve Servisi" width="460" height="320"
+                                            loading="eager" fetchpriority="high" decoding="async">
+                                        <div class="pc-img-tag tag-blue">
+                                            <i class="fas fa-tools"></i>
+                                            <span>Kombi Bakım Onarım</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Osman Tari • Kombi Servisi Rozeti -->
+                                    <div class="pc-master-badge">
+                                        <div class="pc-master-icon">
+                                            <i class="fas fa-certificate text-warning"></i>
+                                        </div>
+                                        <div class="pc-master-text">
+                                            <strong>Osman Tari • Kombi Servisi</strong>
+                                            <small>Isıtma Sistemleri &amp; Doğalgaz Hizmetleri</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Alt 3'lü İstatistik Barı -->
+                                <div class="pc-card-stats-row">
+                                    <div class="pc-card-stat">
+                                        <div class="pc-stat-icon"><i class="fas fa-award"></i></div>
+                                        <div class="pc-stat-text">
+                                            <strong>25+ Yıl</strong>
+                                            <span>Ustalık Tecrübesi</span>
+                                        </div>
+                                    </div>
+                                    <div class="pc-stat-divider"></div>
+                                    <div class="pc-card-stat">
+                                        <div class="pc-stat-icon"><i class="fas fa-shield-alt"></i></div>
+                                        <div class="pc-stat-text">
+                                            <strong>1 Yıl</strong>
+                                            <span>Parça Garantisi</span>
+                                        </div>
+                                    </div>
+                                    <div class="pc-stat-divider"></div>
+                                    <div class="pc-card-stat">
+                                        <div class="pc-stat-icon text-warning"><i class="fas fa-star"></i></div>
+                                        <div class="pc-stat-text">
+                                            <strong>4.9 / 5</strong>
+                                            <span>5.000+ Mutlu Ev</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Alt Boydan Boya Markalar Kartı (Genişletilebilir) -->
+                    <div class="hero-pc-brands-bar js-brands-card" id="pcBrandsCard" role="button" tabindex="0"
+                        aria-expanded="false" title="Tüm markaları görmek için tıklayın">
+                        <div class="brands-bar-inner">
+                            <!-- Dar (Varsayılan) Bar Düzeni: Sol Başlık | Orta Markalar | Sağ Buton -->
+                            <div class="brands-bar-collapsed-row">
+                                <div class="brands-bar-title">
+                                    <i class="fas fa-wrench"></i>
+                                    <span>Hizmet Verdiğimiz Markalar:</span>
+                                </div>
+
+                                <div class="brands-bar-list brands-bar-list--featured">
+                                    <span class="brand-item">Vaillant</span>
+                                    <span class="dot-sep">•</span>
+                                    <span class="brand-item">Bosch</span>
+                                    <span class="dot-sep">•</span>
+                                    <span class="brand-item">Buderus</span>
+                                    <span class="dot-sep">•</span>
+                                    <span class="brand-item">Demirdöküm</span>
+                                    <span class="dot-sep">•</span>
+                                    <span class="brand-item">Baymak</span>
+                                    <span class="dot-sep">•</span>
+                                    <span class="brand-item">E.C.A.</span>
+                                </div>
+
+                                <div class="brands-expand-badge" aria-hidden="true">
+                                    <span class="expand-text">+12 Marka Daha</span>
+                                    <i class="fas fa-chevron-down expand-chevron"></i>
+                                </div>
+                            </div>
+
+                            <!-- Genişleyen Panel: Tıklanınca Açılır -->
+                            <div class="brands-bar-expanded-panel">
+                                <div class="brands-expanded-header">
+                                    <div class="brands-bar-title">
+                                        <i class="fas fa-wrench"></i>
+                                        <span>Hizmet Verdiğimiz Markalar</span>
+                                    </div>
+                                    <div class="brands-expand-badge brands-expand-badge--active" aria-hidden="true">
+                                        <span class="expand-text">Daha Az Göster</span>
+                                        <i class="fas fa-chevron-up expand-chevron"></i>
+                                    </div>
+                                </div>
+
+                                <div class="brands-pc-grid">
+                                    <span class="brand-badge-pill"><i class="fas fa-check-circle"></i> Vaillant</span>
+                                    <span class="brand-badge-pill"><i class="fas fa-check-circle"></i> Bosch</span>
+                                    <span class="brand-badge-pill"><i class="fas fa-check-circle"></i> Buderus</span>
+                                    <span class="brand-badge-pill"><i class="fas fa-check-circle"></i> Demirdöküm</span>
+                                    <span class="brand-badge-pill"><i class="fas fa-check-circle"></i> Baymak</span>
+                                    <span class="brand-badge-pill"><i class="fas fa-check-circle"></i> E.C.A.</span>
+                                    <span class="brand-badge-pill"><i class="fas fa-check-circle"></i> Viessmann</span>
+                                    <span class="brand-badge-pill"><i class="fas fa-check-circle"></i> Ariston</span>
+                                    <span class="brand-badge-pill"><i class="fas fa-check-circle"></i> Protherm</span>
+                                    <span class="brand-badge-pill"><i class="fas fa-check-circle"></i> Daikin</span>
+                                    <span class="brand-badge-pill"><i class="fas fa-check-circle"></i> Warmhaus</span>
+                                    <span class="brand-badge-pill"><i class="fas fa-check-circle"></i> Alarko</span>
+                                    <span class="brand-badge-pill"><i class="fas fa-check-circle"></i> Baxi</span>
+                                    <span class="brand-badge-pill"><i class="fas fa-check-circle"></i> Ferroli</span>
+                                    <span class="brand-badge-pill"><i class="fas fa-check-circle"></i> Immergas</span>
+                                    <span class="brand-badge-pill"><i class="fas fa-check-circle"></i> Beko</span>
+                                    <span class="brand-badge-pill"><i class="fas fa-check-circle"></i> Baykan</span>
+                                    <span class="brand-badge-pill"><i class="fas fa-check-circle"></i> Airfel</span>
+                                </div>
+
+                                <div class="brands-expanded-notice">
+                                    <i class="fas fa-shield-alt text-primary"></i>
+                                    <span>Tüm marka ve modellerde orijinal test cihazları, 1 yıl garantili parça ve aynı
+                                        gün yerinde servis güvencesi.</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -343,31 +641,37 @@
                 <div class="about-story">
                     <div class="story-timeline">
                         <div class="timeline-item">
-                            <div class="timeline-icon">
-                                <i class="fas fa-tools"></i>
-                            </div>
                             <div class="timeline-content">
-                                <h4>1999 - Başlangıç</h4>
+                                <div class="timeline-card-header">
+                                    <h4>1999 - Başlangıç</h4>
+                                    <div class="timeline-icon" aria-hidden="true">
+                                        <i class="fas fa-tools"></i>
+                                    </div>
+                                </div>
                                 <p>Çırak olarak sıhhi tesisat ve mekanik alanda mesleki eğitime başladım.</p>
                             </div>
                         </div>
 
                         <div class="timeline-item">
-                            <div class="timeline-icon">
-                                <i class="fas fa-graduation-cap"></i>
-                            </div>
                             <div class="timeline-content">
-                                <h4>2014 - Firma Kurulumu</h4>
+                                <div class="timeline-card-header">
+                                    <h4>2014 - Firma Kurulumu</h4>
+                                    <div class="timeline-icon" aria-hidden="true">
+                                        <i class="fas fa-graduation-cap"></i>
+                                    </div>
+                                </div>
                                 <p>Hilal Teknik olarak profesyonel hizmet vermeye başladım.</p>
                             </div>
                         </div>
 
                         <div class="timeline-item">
-                            <div class="timeline-icon">
-                                <i class="fas fa-certificate"></i>
-                            </div>
                             <div class="timeline-content">
-                                <h4>Eğitim & Sertifikasyon</h4>
+                                <div class="timeline-card-header">
+                                    <h4>Eğitim & Sertifikasyon</h4>
+                                    <div class="timeline-icon" aria-hidden="true">
+                                        <i class="fas fa-certificate"></i>
+                                    </div>
+                                </div>
                                 <p>Gaz yakıcı cihazlar servis personeli ve kombi elektronik kart eğitimlerini
                                     tamamladım. MEB ve MYK gaz yakıcı cihazlar yetkili servis personeli (seviye 4)
                                     belgelerini edindim.</p>
@@ -375,11 +679,13 @@
                         </div>
 
                         <div class="timeline-item">
-                            <div class="timeline-icon">
-                                <i class="fas fa-star"></i>
-                            </div>
                             <div class="timeline-content">
-                                <h4>Günümüz</h4>
+                                <div class="timeline-card-header">
+                                    <h4>Günümüz</h4>
+                                    <div class="timeline-icon" aria-hidden="true">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
                                 <p>Mekanik tecrübemi aldığım eğitimlerle birleştirerek, kombi arıza, bakım, onarım,
                                     montaj ve yedek parça konusunda profesyonel hizmet verecek kapasiteye ulaştım.</p>
                             </div>
@@ -420,8 +726,8 @@
                         <a href="https://www.instagram.com/hilal_teknik_malatya" target="_blank"
                             rel="noopener noreferrer" aria-label="Instagram Sayfamız"><i
                                 class="fab fa-instagram"></i></a>
-                        <a href="https://wa.me/905376074817" target="_blank"
-                            rel="noopener noreferrer" aria-label="WhatsApp Canlı Destek"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://wa.me/905376074817" target="_blank" rel="noopener noreferrer"
+                            aria-label="WhatsApp Canlı Destek"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
             </div>
@@ -502,12 +808,16 @@
             const drawer = document.getElementById('quoteDrawer');
             const drawerClose = document.getElementById('drawerClose');
             const heroQuoteBtn = document.getElementById('heroQuoteBtn');
+            const heroQuoteBtnMob = document.getElementById('heroQuoteBtnMob');
+            const heroQuoteBtnPC = document.getElementById('heroQuoteBtnPC');
 
             function openDrawer() {
                 if (!drawer) return;
                 drawer.classList.add('open');
                 drawer.setAttribute('aria-hidden', 'false');
                 heroQuoteBtn?.setAttribute('aria-expanded', 'true');
+                heroQuoteBtnMob?.setAttribute('aria-expanded', 'true');
+                heroQuoteBtnPC?.setAttribute('aria-expanded', 'true');
                 document.body.style.overflow = 'hidden';
             }
 
@@ -516,6 +826,8 @@
                 drawer.classList.remove('open');
                 drawer.setAttribute('aria-hidden', 'true');
                 heroQuoteBtn?.setAttribute('aria-expanded', 'false');
+                heroQuoteBtnMob?.setAttribute('aria-expanded', 'false');
+                heroQuoteBtnPC?.setAttribute('aria-expanded', 'false');
                 document.body.style.overflow = '';
             }
 
@@ -546,6 +858,35 @@
                     closeDrawer();
                 }
             });
+
+            // ==================== HİZMET VERDİĞİMİZ MARKALAR KART GENİŞLEME / DARALMA ====================
+            const brandsCards = document.querySelectorAll('.js-brands-card');
+            brandsCards.forEach(card => {
+                function toggleBrandCard(e) {
+                    // Eğer tıklanan eleman bir link ise varsayılan davranışı bozma
+                    if (e.target.closest('a')) return;
+
+                    const isExpanded = card.classList.toggle('is-expanded');
+                    card.setAttribute('aria-expanded', isExpanded ? 'true' : 'false');
+
+                    const badgeText = card.querySelector('.expand-text');
+                    if (badgeText) {
+                        if (card.id === 'mobBrandsCard') {
+                            badgeText.textContent = isExpanded ? 'Daha Az' : '+12 Marka';
+                        } else {
+                            badgeText.textContent = isExpanded ? 'Daha Az Göster' : '+12 Marka Daha';
+                        }
+                    }
+                }
+
+                card.addEventListener('click', toggleBrandCard);
+                card.addEventListener('keydown', function (e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        toggleBrandCard(e);
+                    }
+                });
+            });
         });
     </script>
 
@@ -569,8 +910,8 @@
     </button>
 
     <!-- ==================== MERKEZİ YAPILANDIRMA VE DİNAMİK SENKRONİZASYON ==================== -->
-    <script src="site-config.js"></script>
-    <script src="analytics.js"></script>
+    <script src="site-config.js" defer></script>
+    <script src="analytics.js" defer></script>
 </body>
 
 </html>

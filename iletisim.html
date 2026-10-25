@@ -56,7 +56,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="image" href="RESIMLER/ambient_crescent_bg.webp">
-    <link rel="stylesheet" href="style.css?v=20261020_center_all">
+    <link rel="stylesheet" href="style.css?v=20261021_clean_architecture">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
     <script type="application/ld+json">
@@ -283,7 +283,7 @@
                     <div id="contactInteractiveMap" class="contact-interactive-map"
                         aria-label="Hilal Teknik İnteraktif Konum Haritası">
                         <noscript>
-                            <iframe id="contactMapIframe" class="contact-map-iframe"
+                            <iframe id="noscriptContactMapIframe" class="contact-map-iframe"
                                 src="https://maps.google.com/maps?q=Pa%C5%9Fak%C3%B6%C5%9Fk%C3%BC+Mah.+%C4%B0smet+Pa%C5%9Fa+Cad.+No:44,+Battalgazi+/+Malatya&t=&z=16&ie=UTF8&iwloc=&output=embed"
                                 width="100%" height="480" style="border:0;" allowfullscreen="" loading="lazy"
                                 referrerpolicy="no-referrer-when-downgrade"
@@ -403,8 +403,8 @@
 
     <!-- ==================== MERKEZİ YAPILANDIRMA VE DİNAMİK SENKRONİZASYON ==================== -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
-    <script src="site-config.js"></script>
-    <script src="analytics.js"></script>
+    <script src="site-config.js" defer></script>
+    <script src="analytics.js" defer></script>
 
     <!-- ==================== NAVİGASYON & HARİTA SCRIPT ==================== -->
     <script>
@@ -461,7 +461,7 @@
                             <div class="hilal-custom-pin" title="Hilal Teknik Servis Noktası">
                                 <div class="pin-pulse"></div>
                                 <div class="pin-circle">
-                                    <img src="./RESIMLER/hilal-logo-emblem.png" alt="Hilal Teknik Logo" class="pin-emblem">
+                                    <img src="./RESIMLER/hilal-logo-emblem.png" alt="Hilal Teknik Logo" class="pin-emblem" width="24" height="24">
                                 </div>
                                 <div class="pin-pointer"></div>
                             </div>

@@ -58,7 +58,7 @@
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="preload" as="image" href="RESIMLER/ambient_crescent_bg.webp">
-    <link rel="stylesheet" href="style.css?v=20261020_ambient">
+    <link rel="stylesheet" href="style.css?v=20261021_clean_architecture">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script type="application/ld+json">
     {
@@ -244,60 +244,70 @@
                     <div class="timeline-item">
                         <div class="timeline-year">1999</div>
                         <div class="timeline-content">
-                            <h3>Mesleki Başlangıç</h3>
+                            <div class="timeline-card-header">
+                                <h3>Mesleki Başlangıç</h3>
+                                <div class="timeline-icon" aria-hidden="true">
+                                    <i class="fas fa-tools"></i>
+                                </div>
+                            </div>
                             <p>Çırak olarak sıhhi tesisat ve mekanik alanda mesleki eğitime başladım. Temel becerileri
                                 öğrenmeye odaklandım.</p>
-                            <div class="timeline-icon">
-                                <i class="fas fa-tools"></i>
-                            </div>
                         </div>
                     </div>
 
                     <div class="timeline-item">
                         <div class="timeline-year">2005-2013</div>
                         <div class="timeline-content">
-                            <h3>Deneyim Kazanma Dönemi</h3>
+                            <div class="timeline-card-header">
+                                <h3>Deneyim Kazanma Dönemi</h3>
+                                <div class="timeline-icon" aria-hidden="true">
+                                    <i class="fas fa-cogs"></i>
+                                </div>
+                            </div>
                             <p>Farklı projelerde çalışarak pratik deneyim kazandım. Sıhhi tesisat, ısıtma sistemleri ve
                                 kombi teknolojilerinde uzmanlaştım.</p>
-                            <div class="timeline-icon">
-                                <i class="fas fa-cogs"></i>
-                            </div>
                         </div>
                     </div>
 
                     <div class="timeline-item">
                         <div class="timeline-year">2014</div>
                         <div class="timeline-content">
-                            <h3>Firma Kurulumu</h3>
+                            <div class="timeline-card-header">
+                                <h3>Firma Kurulumu</h3>
+                                <div class="timeline-icon" aria-hidden="true">
+                                    <i class="fas fa-building"></i>
+                                </div>
+                            </div>
                             <p>Hilal Teknik olarak kendi firmamı kurdum. Artık kendi müşterilerime hizmet vermeye
                                 başladım.</p>
-                            <div class="timeline-icon">
-                                <i class="fas fa-building"></i>
-                            </div>
                         </div>
                     </div>
 
                     <div class="timeline-item">
                         <div class="timeline-year">2015</div>
                         <div class="timeline-content">
-                            <h3>Sertifikasyon ve Eğitim</h3>
+                            <div class="timeline-card-header">
+                                <h3>Sertifikasyon ve Eğitim</h3>
+                                <div class="timeline-icon" aria-hidden="true">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                            </div>
                             <p>Gaz yakıcı cihazlar ve kombi elektronik kart eğitimlerini tamamladım. MEB ve MYK
                                 belgelerini aldım.</p>
-                            <div class="timeline-icon">
-                                <i class="fas fa-certificate"></i>
-                            </div>
                         </div>
                     </div>
 
                     <div class="timeline-item">
                         <div class="timeline-year">2016-Günümüz</div>
                         <div class="timeline-content">
-                            <h3>Uzman Seviye</h3>
+                            <div class="timeline-card-header">
+                                <h3>Uzman Seviye</h3>
+                                <div class="timeline-icon" aria-hidden="true">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
                             <p>Mekanik tecrübemi aldığım eğitimlerle birleştirerek, kombi arıza, bakım, onarım, montaj
                                 ve yedek parça konusunda profesyonel hizmet verecek kapasiteye ulaştım.</p>
-                            <div class="timeline-icon">
-                                <i class="fas fa-star"></i>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -462,8 +472,8 @@
         </button>
 
         <!-- ==================== MERKEZİ YAPILANDIRMA VE DİNAMİK SENKRONİZASYON ==================== -->
-        <script src="site-config.js"></script>
-        <script src="analytics.js"></script>
+        <script src="site-config.js" defer></script>
+        <script src="analytics.js" defer></script>
 </body>
 
 </html>

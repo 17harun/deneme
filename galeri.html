@@ -58,7 +58,7 @@
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="preload" as="image" href="RESIMLER/ambient_crescent_bg.webp">
-    <link rel="stylesheet" href="style.css?v=20261020_ambient">
+    <link rel="stylesheet" href="style.css?v=20261021_clean_architecture">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script type="application/ld+json">
     {
@@ -129,7 +129,9 @@
         <section class="section section--white with-header-offset">
             <div class="container">
                 <h2 class="section-title">GALERİ</h2>
-                <p class="section-subtitle">Profesyonel kombi servis çalışmalarımızdan seçkiler</p>
+                <div class="gallery-subtitle-wrapper">
+                    <p class="gallery-subtitle-glass">Profesyonel kombi servis çalışmalarımızdan seçkiler</p>
+                </div>
 
                 <!-- Gallery Categories -->
                 <div class="gallery-categories">
@@ -675,7 +677,7 @@
         <div id="lightbox" class="lightbox">
             <div class="lightbox-content">
                 <span class="lightbox-close">&times;</span>
-                <img id="lightbox-img" src="" alt="">
+                <img id="lightbox-img" src="" alt="Galeri Büyütülmüş Görsel" width="800" height="600">
                 <div id="lightbox-caption"></div>
                 <button class="lightbox-nav lightbox-prev" onclick="changeImage(-1)">&#10094;</button>
                 <button class="lightbox-nav lightbox-next" onclick="changeImage(1)">&#10095;</button>
@@ -886,8 +888,8 @@
         </button>
 
         <!-- ==================== MERKEZİ YAPILANDIRMA VE DİNAMİK SENKRONİZASYON ==================== -->
-        <script src="site-config.js"></script>
-        <script src="analytics.js"></script>
+        <script src="site-config.js" defer></script>
+        <script src="analytics.js" defer></script>
 </body>
 
 </html>
